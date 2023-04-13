@@ -64,5 +64,12 @@ public class PlayerMagicSquareManager : MonoBehaviour
                 break;
             }
         }
+
     }
+
+    public void Activate(int dirIndex)//–‚–@w‚Ì•\¦Ø‚è‘Ö‚¦ŠÖ”‚ğŒÄ‚Ño‚·ŠÖ”
+    {
+        playerMagicSquares[magicSquareIndex].ActivateMagicSquare(dirIndex);
+    }
+
 }

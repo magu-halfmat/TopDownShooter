@@ -21,11 +21,16 @@ public class PlayerMovement : Movement
     //アニメーションを格納する変数
     private Animator animator;
 
+    //プレイヤーの魔法陣管理スクリプト格納用の変数
+    private PlayerMagicSquareManager playerMagicSquareManager;
+
     private void Awake()
     {
         //コンポーネントを取得
         mainCam = Camera.main;
         animator = GetComponent<Animator>();
+
+        playerMagicSquareManager = GetComponent<PlayerMagicSquareManager>();
 
     }
 
@@ -83,5 +88,35 @@ public class PlayerMovement : Movement
 
         animator.SetFloat("FaceX", x);
         animator.SetFloat("FaceY", y);
+
+        DirectionMagicSquare(x, y);
+    }
+
+    void DirectionMagicSquare(float x, float y)//魔法陣の方向決め
+    {
+        if (x == 1f && y == 0)//side向きなら
+        {
+            playerMagicSquareManager.Activate(0);//0番の魔法陣を表示
+        }
+
+        if (x == 0 && y == 1f)//up向きなら
+        {
+            playerMagicSquareManager.Activate(1);//1番の魔法陣を表示
+        }
+
+        if (x == 0 && y == -1f)//front向きなら
+        {
+            playerMagicSquareManager.Activate(2);//2番の魔法陣を表示
+        }
+
+        if (x == 1f && y == 1f)//side-up向きなら
+        {
+            playerMagicSquareManager.Activate(3);//3番の魔法陣を表示
+        }
+
+        if (x == 1f && y == -1f)//side-down向きなら
+        {
+            playerMagicSquareManager.Activate(4);//4番の魔法陣を表示
+        }
     }
 }
