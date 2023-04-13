@@ -499,13 +499,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 637805420}
+  - component: {fileID: 637805421}
   m_Layer: 0
   m_Name: MagicSquare_Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &637805420
 Transform:
   m_ObjectHideFlags: 0
@@ -526,6 +527,24 @@ Transform:
   m_Father: {fileID: 1366645706}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &637805421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637805419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65ce058d8c1ab9843ae2c2b7bfb9749f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  magicSquares:
+  - {fileID: 1714325688}
+  - {fileID: 1177305716}
+  - {fileID: 1119177195}
+  - {fileID: 288276321}
+  - {fileID: 685861637}
 --- !u!1 &685861637
 GameObject:
   m_ObjectHideFlags: 0
@@ -1039,13 +1058,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1329024597}
+  - component: {fileID: 1329024598}
   m_Layer: 0
   m_Name: MagicSquare_Yellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1329024597
 Transform:
   m_ObjectHideFlags: 0
@@ -1066,6 +1086,24 @@ Transform:
   m_Father: {fileID: 1366645706}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1329024598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329024596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65ce058d8c1ab9843ae2c2b7bfb9749f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  magicSquares:
+  - {fileID: 1247157921}
+  - {fileID: 1846911355}
+  - {fileID: 151740649}
+  - {fileID: 1645514201}
+  - {fileID: 2003870866}
 --- !u!1 &1366645703
 GameObject:
   m_ObjectHideFlags: 0
@@ -1080,6 +1118,7 @@ GameObject:
   - component: {fileID: 1366645709}
   - component: {fileID: 1366645708}
   - component: {fileID: 1366645707}
+  - component: {fileID: 1366645710}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1240,6 +1279,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3854997, y: 0.60529244}
   m_EdgeRadius: 0
+--- !u!114 &1366645710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366645703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb478af05fec97c42a52ca91231011bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMagicSquares:
+  - {fileID: 637805421}
+  - {fileID: 1465435567}
+  - {fileID: 1329024598}
 --- !u!1 &1421554342
 GameObject:
   m_ObjectHideFlags: 0
@@ -1333,13 +1388,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1465435566}
+  - component: {fileID: 1465435567}
   m_Layer: 0
   m_Name: MagicSquare_Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1465435566
 Transform:
   m_ObjectHideFlags: 0
@@ -1360,6 +1416,24 @@ Transform:
   m_Father: {fileID: 1366645706}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1465435567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465435565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65ce058d8c1ab9843ae2c2b7bfb9749f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  magicSquares:
+  - {fileID: 1613103137}
+  - {fileID: 1024538388}
+  - {fileID: 1421554342}
+  - {fileID: 1204327681}
+  - {fileID: 353806649}
 --- !u!1 &1613103137
 GameObject:
   m_ObjectHideFlags: 0
